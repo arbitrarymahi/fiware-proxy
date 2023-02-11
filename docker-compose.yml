@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: ./context-provider
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgres://todoapp@postgres/todos
